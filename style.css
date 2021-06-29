@@ -87,13 +87,6 @@ body{
 .container > div {
     flex: 1; /*grow*/
   }
- 
-
-  .container::after {
-    content: "";
-    clear: both;
-    display: table;}
-
 
 
 .first{
