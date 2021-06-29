@@ -16,13 +16,14 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgement)(#acknowledment)
 
 
 ## Overview
 
 ### The challenge
 
-Still finding it difficult to view on smaller devices. I am open to suggestions and contributions
+The device can be viewed on both mobile and desktop devices.
 
 ### Screenshot
 
@@ -31,7 +32,7 @@ Still finding it difficult to view on smaller devices. I am open to suggestions 
 
 ### Links
 
-- Solution URL: https://bolanleola.github.io/statspreviewcard/
+- Solution URL: https://bolanleola.github.io/statspreviewcard/git
 - Live Site URL: https://bolanleola.github.io/statspreviewcard/
 
 ## My process
@@ -41,46 +42,38 @@ Still finding it difficult to view on smaller devices. I am open to suggestions 
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
 
 
 ### What I learned
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column-reverse;
+    }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
+    .first{
+        border-radius: 0px 0px 15px 15px ;
+    }
+    .second{
+        border-radius: 15px 15px 0px 0px;
+    }
+    img{
+        border-radius: 15px 15px 0px 0px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .innercon{
+        flex-direction: column;
+    }
+  }
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
@@ -89,8 +82,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [resource 1](https://www.w3schools.com) - This helped me for Responsive CSS design. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://stackoverflow.com) - Using this, I was able to get different ways to solving a challenge
+- (https://www.w3schools.com) 
+- (https://stackoverflow.com)
 
 
 ## Author
@@ -99,5 +92,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Frontend Mentor - [@omobolanle](https://www.frontendmentor.io/profile/omobolanle)
 
 
+### Acknowledgement
 
+I will like to thank Grace Ama from the @frontendio community for her feedback on my first trial. I was able to make use of the suggestions she gave and it worked out fine
 
